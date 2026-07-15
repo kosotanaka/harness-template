@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status*)",
+      "Bash(git log*)",
+      "Bash(git diff*)",
+      "Bash(git show*)",
+      "Bash(git branch*)",
+      "Bash(git fetch*)",
+      "Bash(ls*)",
+      "Bash(wc*)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '=== thinking-log/NOW.md ==='; cat thinking-log/NOW.md 2>/dev/null",
+            "timeout": 15,
+            "statusMessage": "NOW.md を読み込み中"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+# 秘密は絶対にコミットしない（在り処だけをAGENTS.mdに書く）
+.env
+*.key
+*_token*
+*credentials*
+
+# OS
+.DS_Store
+Thumbs.db
